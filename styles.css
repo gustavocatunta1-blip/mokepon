@@ -22,7 +22,7 @@ body{
     font-size: 40px;
 }
 
-.tarjeta, .tarjetas-ataques{
+.tarjetas, .tarjetas-ataques{
     display: flex;
     gap: 10px;
     
@@ -64,6 +64,7 @@ input:checked + label {
 }
 
 #seleccionar-ataque{
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -73,8 +74,8 @@ input:checked + label {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
-        border-color: transparent;
-    width: 100px;
+    border-color: transparent;
+    width: 80 px;
     color:black;
      font-family: "Poppins", sans-serif;
 }
@@ -99,22 +100,45 @@ input:checked + label {
     grid-template-columns: 100px 100px;
     color:orange;
 }
-#vidas-jugador,#vidas-enemigos{
+#vidas-jugador,#vidas-enemigo{
     font-size: 32px;
     margin-bottom: 0;
 
 }
-.ataques-jugador, .ataques-enemigos{
+.ataques-jugador, .ataques-enemigo{
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-@media (max-width: 360px){
+#ver-mapa button{
+     width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: orange;
+    border: 2px solid white;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 560px){
     .tarjetas, .tarjetas-ataques{
     flex-direction: column; 
  }   
 }
 
+@media (max-width: 300px){
+    #ver-mapa div{
+    align-items: center;
+    flex-direction: column; 
+ }   
+}
